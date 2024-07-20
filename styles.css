@@ -1,0 +1,46 @@
+:root {
+  --main-color: #0b87ff;
+  --poppin-font: 'Poppins', sans-serif;
+  --box-shadow-properties: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+  --border-bottom-properties: 2px solid #d1d3d4;
+}
+
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+.container {
+  width: 90%;
+  max-width: 34em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+#new-task {
+  position: relative;
+  background-color: white;
+  padding: 1.8em 1.25em;
+  border-radius: 0.3em;
+  box-shadow: var(--box-shadow-properties);
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1em;
+}
+
+#new-task input {
+  font-family: var(--poppin-font);
+  font-size: 1em;
+  border: none;
+  border-bottom: var(--border-bottom-properties);
+  padding: 0.8em 0.5em;
+  color: #111;
+  font-weight: 500;
+}
