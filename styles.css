@@ -44,3 +44,69 @@ body {
   color: #111;
   font-weight: 500;
 }
+
+#new-task input:focus {
+  outline: none;
+  border-color: var(--main-color);
+}
+
+#new-task button {
+  font-family: var(--poppin-font);
+  font-weight: 500;
+  font-size: 1em;
+  background-color: var(--main-color);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
+#task {
+  background-color: white;
+  position: relative;
+  padding: 1.8em 1.25em;
+  margin-top: 3.8em;
+  width: 100%;
+  box-shadow: var(--box-shadow-properties);
+  border-radius: 0.6em;
+}
+
+.task {
+  background-color: white;
+  padding: 0.3em 0.6em;
+  margin-top: 0.6em;
+  display: flex;
+  align-items: center;
+  border-bottom: var(--border-bottom-properties);
+  cursor: pointer;
+}
+
+.task span {
+  font-family: var(--poppin-font);
+  font-size: 0.9em;
+}
+
+.task button {
+  color: white;
+  padding: 0.8em 0;
+  width: 2.8em;
+  border-radius: 0.3em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: #fb3b3b;
+}
+
+.edit {
+  background-color: var(--main-color);
+  margin-left: auto;
+  margin-right: 3em;
+}
+
+.completed {
+  text-decoration: line-through;
+}
