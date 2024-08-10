@@ -62,7 +62,7 @@ body {
   cursor: pointer;
 }
 
-#task {
+#tasks {
   background-color: white;
   position: relative;
   padding: 1.8em 1.25em;
